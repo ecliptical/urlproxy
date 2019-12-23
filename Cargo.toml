@@ -1,0 +1,16 @@
+[package]
+name = "urlproxy"
+description = "Proxy HTTP requests to a remote URL, optionally injecting Basic Auth credentials."
+version = "0.1.0"
+authors = ["Peter Nehrer <pnehrer@eclipticalsoftware.com>"]
+edition = "2018"
+
+[dependencies]
+headers = "0.3"
+hyper = "0.13"
+hyper-tls = "0.4"
+log = { version = "0.4", features = ["std"] }
+native-tls = "0.2"
+pretty_env_logger = "0.3"
+structopt = "0.3"
+tokio = { version = "0.2", features = ["macros"] }
